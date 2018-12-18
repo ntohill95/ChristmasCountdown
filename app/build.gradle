@@ -35,5 +35,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha08'
     implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0-alpha08'
-    implementation 'com.airbnb.android:lottie:2.5.0'
+    implementation 'com.airbnb.android:lottie:2.8.0'
 }
