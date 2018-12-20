@@ -7,16 +7,62 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:id="@+id/countdown_textview"
-            android:text="7 days, 6 hours, 43 mins"
-            android:padding="30dp"
-            android:layout_gravity="center"
-            android:lineSpacingExtra="25dp"
-            android:gravity="center"
-            android:textSize="40sp"
-            android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:id="@+id/linear_layout_time_textviews"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/days_textview"
+                android:text="7 days"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="25dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:typeface="normal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/hours_textview"
+                android:text="7 hours"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="25dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:typeface="normal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/minutes_textview"
+                android:text="7 minutes"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="25dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:typeface="normal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/seconds_textview"
+                android:text="7 seconds"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="25dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:typeface="normal"/>
+    </LinearLayout>
 
     <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/tree_animation"
@@ -29,5 +75,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/countdown_textview"/>
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_time_textviews"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
