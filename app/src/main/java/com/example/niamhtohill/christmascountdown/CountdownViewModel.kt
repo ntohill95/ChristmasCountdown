@@ -18,10 +18,11 @@ class CountdownViewModel : ViewModel() {
         val formatter = SimpleDateFormat("dd.MM.yyyy, HH:mm:ss")
         formatter.isLenient = false
 
-        val endTime = "25.12.2018, 00:00:00"
+        val endTime = "25.12." + Calendar.getInstance().get(Calendar.YEAR) + ", 00:00:00"
         lateinit var endDate: Date
         var milliseconds = 0L
 
+        println("*******************" + endTime)
         try {
             endDate = formatter.parse(endTime)
             milliseconds = endDate.time
@@ -29,7 +30,6 @@ class CountdownViewModel : ViewModel() {
             println(e.message)
         }
         var startTime = System.currentTimeMillis()
-        var diff = milliseconds - startTime
 
         val countDownTimer = object : CountDownTimer(milliseconds, 1000) {
             override fun onTick(p0: Long) {
